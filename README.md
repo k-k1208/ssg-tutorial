@@ -1,5 +1,5 @@
 # next.jsによるSSG実装チュートリアル
-- 外部データ(https://jsonplaceholder.typicode.com/posts)所得
+- (外部データ)[https://jsonplaceholder.typicode.com/posts]所得
     - featch APIを使用
 - データを用いてレンダリング
     - レンダリングにSSR,SSG,CSR,ISRのどの仕組みを用いる？
