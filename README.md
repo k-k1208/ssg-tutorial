@@ -1,4 +1,4 @@
-# next.jsによるSSG実装チュートリアル
+# next.jsによるSSG実装チュートリアル  
 - [外部データ](https://jsonplaceholder.typicode.com/posts)所得
     - featch APIを使用
 - データを用いてレンダリング
