@@ -1,9 +1,8 @@
-import type { NextPage, InferGetStaticPropsType} from 'next'
+import type { NextPage} from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 
-type Props = InferGetStaticPropsType<typeof getStaticProps>
-const Blog: NextPage<Props> = ({posts}) => {
+const Blog = ({posts}:{posts:postType[]}) => {
   return (
     <>
       <Head>
@@ -29,16 +28,16 @@ const Blog: NextPage<Props> = ({posts}) => {
     </>
   )
 }
+export default Blog;
 
-export default Blog
 
-
-type postType = {
+export type postType = {
   "userId": number;
   "id": number;
   "title": string;
   "body": string;
-}
+};
+
 
 // ビルド時に実行
 export const getStaticProps = async() => {
@@ -47,4 +46,4 @@ export const getStaticProps = async() => {
   return {
     props: {posts}, 
   }// ページコンポーネントにpropsとして渡される
-}
+};
