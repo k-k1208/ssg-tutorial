@@ -13,7 +13,18 @@ const Blog: NextPage<Props> = ({posts}) => {
       </Head>
       <h1 className='text-center text-3xl'>SSG tutorial</h1>
       <ul>
-        {posts.map(post => <li>{post.id}:<span className='hover:underline'><Link href={'posts/' + String(post.id)}>{post.title}</Link></span></li>)}
+        {posts.map(post => {
+          return (
+            <li key={post.id}>
+              {post.id}:
+              <span className='hover:underline'>
+                <Link href={'posts/' + String(post.id)}>
+                  {post.title}
+                </Link>
+              </span>
+            </li>
+          )         
+        })}
       </ul>
     </>
   )
