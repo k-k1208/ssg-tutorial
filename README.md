@@ -1,9 +1,9 @@
 # next.jsによるSSG実装チュートリアル  
-- [外部データ](https://jsonplaceholder.typicode.com/posts)所得
+- 外部データを[jsonplaceholder](https://jsonplaceholder.typicode.com/posts)から所得
     - featch APIを使用
 - データを用いてレンダリング
     - レンダリングにSSR,SSG,CSR,ISRのどの仕組みを用いる？
-        - 今回はSSG→getStaticProps関数が必要
+        - 今回はSSGを使用。そのためgetStaticProps関数が必要
 - 作成サイトリンク
     - ssg-tutorial.vercel.app
 ## pages/index.tsx：ブログの一覧ページ(getStaticProps関数)
